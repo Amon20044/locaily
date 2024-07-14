@@ -22,7 +22,7 @@ function LandingPage() {
                 </div>
             ))}
             </div>
-            <div className=' w-[40vw] h-[100vh] ml-0 -z-10 max-md:flex-col max-md:-ml-4 max-md:-mt-96 max-md:w-[100vw]'>
+            <div className=' w-[40vw] h-[100vh] ml-40 -z-10 max-md:flex-col max-md:-ml-4 max-md:-mt-96 max-md:w-[100vw] max-lg:ml-0'>
                 <Spline scene="https://prod.spline.design/4f7qqqkli6Y052ce/scene.splinecode" />
             </div>
             </div>
