@@ -1,20 +1,38 @@
 import React from 'react';
-import { Metadata } from 'next';
-import { Font } from 'next/font';
+import localFont from 'next/font/local';
 
-const Quity = Font({
+const Quity = localFont({
   src: [
-    { path: '@/assets/fonts/quity.woff2', weight: 'normal', style: 'normal' },
-    { path: '@/assets/fonts/quity.woff', weight: 'normal', style: 'normal' },
-    { path: '@/assets/fonts/quity.ttf', weight: 'normal', style: 'normal' },
+    { path: './fonts/quity.woff2', weight: 'normal', style: 'normal' },
+    { path: './fonts/quity.woff', weight: 'normal', style: 'normal' },
+    { path: './fonts/quity.ttf', weight: 'normal', style: 'normal' },
   ],
+  variable: '--quity',
+  display: 'swap',
+});
+const Quicksand = localFont({
+  src: [
+    { path: './fonts/Quicksand.woff2', weight: 'normal', style: 'normal' },
+    { path: './fonts/Quicksand.woff', weight: 'normal', style: 'normal' },
+    { path: './fonts/Quicksand.ttf', weight: 'normal', style: 'normal' },
+  ],
+  variable: '--quicksand',
+  display: 'swap',
+});
+const led= localFont({
+  src: [
+    { path: './fonts/led.woff2', weight: 'normal', style: 'normal' },
+    { path: './fonts/led.woff', weight: 'normal', style: 'normal' },
+    { path: './fonts/led.ttf', weight: 'normal', style: 'normal' },
+  ],
+  variable: '--led',
   display: 'swap',
 });
 
-export const metadata = metadata({
+export const metadata = {
   title: "LocAI.ly",
   description: "team LocAI.ly",
-});
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -22,20 +40,8 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <style>{`
-          @font-face {
-            font-family: 'Quity';
-            src: url(${Quity.src[0].path}) format('woff2'),
-                 url(${Quity.src[1].path}) format('woff'),
-                 url(${Quity.src[2].path}) format('truetype');
-            font-display: swap;
-          }
-          .quity {
-            font-family: 'Quity';
-          }
-        `}</style>
       </head>
-      <body className="quity">
+      <body className={Quicksand.className}>
         <div>{children}</div>
       </body>
     </html>

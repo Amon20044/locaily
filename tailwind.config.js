@@ -12,6 +12,15 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        quity: ['var(--quity)']
+      },
+      fontFamily: {
+        Quicksand: ['var(--quicksand)']
+      },
+      fontFamily:{
+        led:['var(--led)']
+      }
     },
   },
   plugins: [],

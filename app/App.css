@@ -17,23 +17,23 @@ body {
 
 @font-face {
   font-family: "Quity";
-  src: url("/assets/fonts/quity.ttf") format("truetype"),
-       url("/assets/fonts/quity.woff") format("woff"),
-       url("/assets/fonts/quity.woff2") format("woff2");
+  src: url("./fonts/quity.ttf") format("truetype"),
+       url("./fonts/quity.woff") format("woff"),
+       url("./fonts/quity.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Quicksand";
-  src: url("/assets/fonts/Quicksand.woff2") format("woff2"),
-       url("/assets/fonts/Quicksand.woff") format("woff"),
-       url("/assets/fonts/Quicksand.ttf") format("truetype");
+  src: url("./fonts/Quicksand.woff2") format("woff2"),
+       url("./fonts/Quicksand.woff") format("woff"),
+       url("./fonts/Quicksand.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "The Led Display St";
-  src: url("/assets/fonts/The+Led+Display+St.woff2") format("woff2"),
-       url("/assets/fonts/The-Led-Display-St.woff") format("woff"),
-       url("/assets/fonts/The+Led+Display+St.ttf") format("truetype");
+  font-family: "led";
+  src: url("./fonts/led.woff2") format("woff2"),
+       url("./fonts/led.woff") format("woff"),
+       url("./fonts/led.ttf") format("truetype");
 }
 
 .blob {
@@ -50,13 +50,13 @@ body {
 }
 
 .quity {
-  font-family: "Sintony";
+  font-family: "Quity";
 }
 
 .quicksand {
-  font-family: "Comfortaa";
+  font-family: "Quicksand";
 }
 
 .led {
-  font-family: "Anek Latin";
+  font-family: "led";
 }

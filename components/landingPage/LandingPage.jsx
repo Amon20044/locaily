@@ -8,10 +8,10 @@ function LandingPage() {
             <div className='w-screen flex flex-row items-center min-h-[80vh] h-auto content-between z-0 max-md:flex-col max-md:content-center'>
             <div className='ff textstructure mt-18 ml-12 px-16 max-md:mt-32 max-md:ml-4 mt-4 pt-12 mr-[0]'>
                 {['LocAI.Ly', 'Guides You', 'Locally'].map((item, index) => (
-                    <div className='masker quicksand'  key={index}>
+                    <div className='masker quity'  key={index}>
                         <div className=' flex items-center content-center'>
                             
-                            <h1 className={`inline-block text-[7vw] -ml-4 -mr-4 max-md:text-7xl max-md:-ml-4 leading-[12vh] tracking-normal font-black ${ (index === 1 || index === 2) && 'uppercase mix-blend-exclusion '} ${index === 0 && 'uppercase text-2xl scale-102 tracking-tighter'}`}>
+                            <h1 className={`inline-block text-[7vw] -ml-4 -mr-4 max-md:text-7xl max-md:-ml-4 leading-[12vh] tracking-wide font-black ${ (index === 1 || index === 2) && 'uppercase mix-blend-exclusion '} ${index === 0 && 'uppercase text-2xl scale-102 tracking-tighter'}`}>
                                 {item}
                             </h1>
                         </div>
