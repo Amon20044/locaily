@@ -37,17 +37,16 @@ const Sidenav = () => {
 
   return (
     <div className="sidenav">
-      <div className='top Image'>
         <Image
           priority
           src={logo}
           alt="LocAI.ly Logo"
-          
+          className='top Image'
         />
-      </div>
+      
       <div className='mid'>
         <div className='homeBtn'>
-          <Link href={"@/app/learn"}>
+          <Link href={".."}>
             <Image
               src={Home}
               alt="Home"

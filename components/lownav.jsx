@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '@/assets/LocAIly_Logo_1.svg';
 import Home from '@/assets/home.svg';
 import history from '@/assets/History.svg';
 import settings from '@/assets/Settings.svg';

@@ -1,17 +1,21 @@
-
 @font-face {
-    font-family: "Exo" ;
+    font-family: "Exo";
     src: url(https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap);
 }
 
-.ff{
+:root {
+    --color1: rgb(54, 54, 54);
+    --color2: rgba(48, 48, 48, 0.523);
+    --color3: rgba(181, 255, 90, 0.686);
+}
+
+.ff {
     font-family: "Exo";
     width: auto;
     max-width: 730px;
     border-radius: 2em;
     padding: 1.5em;
-    box-shadow:  20px 20px 60px #00000042,
-                -20px -20px 60px #00000042;
+    box-shadow: 20px 20px 60px #00000042, -20px -20px 60px #00000042;
 }
 
 .gg-file-document {
@@ -19,7 +23,7 @@
     box-sizing: border-box;
     position: relative;
     display: block;
-    transform: scale(var(--ggs,1));
+    transform: scale(var(--ggs, 1));
     width: 14px;
     height: 16px;
     border: 2px solid transparent;
@@ -28,45 +32,160 @@
     box-shadow: 0 0 0 2px;
     border-radius: 1px;
     border-top-right-radius: 4px;
-    overflow: hidden
+    overflow: hidden;
 }
+
 .gg-file-document::after,
 .gg-file-document::before {
-    
     mix-blend-mode: difference;
     content: "";
     display: block;
     box-sizing: border-box;
-    position: absolute
+    position: absolute;
 }
+
 .gg-file-document::before {
-    
     mix-blend-mode: difference;
     background: currentColor;
-    box-shadow:
-        0 4px 0,
-        -6px -4px 0;
+    box-shadow: 0 4px 0, -6px -4px 0;
     left: 0;
     width: 10px;
     height: 2px;
-    top: 8px
+    top: 8px;
 }
 
 .gg-file-document::after {
-    
     mix-blend-mode: difference;
     width: 6px;
     height: 6px;
     border-left: 2px solid;
     border-bottom: 2px solid;
     right: -1px;
-    top: -1px
+    top: -1px;
 }
 
-@media (max-width:768px){
-    .ff{
+@media (max-width: 768px) {
+    .ff {
         margin: 2em;
         padding: 2em;
         max-width: 100vw;
     }
+}
+
+@keyframes animateBg {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.animated-button {
+    mix-blend-mode: difference;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    padding-right: 3em;
+    border: 4px solid;
+    border-color: var(--color3);
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 32px;
+    font-weight: 800;
+    color: var(--color3);
+
+    
+background: rgba(0, 0, 0, 0);
+border-radius: 0 16px 0 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+
+    background-size: 200% 200%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    color: #000000;
+    transition: 0.6s;
+}
+
+.animated-button svg {
+    position: absolute;
+    width: 4vw;
+    margin-left: -1.5vw;
+    margin-right: -1.65vw;
+    fill: var(--color3);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+    right: 16px;
+}
+
+.animated-button .arr-2 {
+    left: -25%;
+}
+
+.text {
+    margin-top: 0.15em;
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(196, 255, 108, 0.729);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #000000;
+    border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+    right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+    left: 16px;
+}
+
+.animated-button:hover .text {
+    transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+    fill: #000000;
+}
+
+.animated-button:active {
+    scale: 1.5;
+    box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+    width: 500px;
+    height: 500px;
+    opacity: 1;
 }
