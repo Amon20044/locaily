@@ -1,0 +1,14 @@
+.nb{
+    background: rgba( 0, 0, 0, 0.35 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+
+.blur{
+
+background: rgba(0, 0, 0, 0);
+border-radius: 0 16px 0 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+}

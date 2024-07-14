@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1f1f1f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap');
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap);
+}
+
+@font-face {
+  font-family: "Quity";
+  src: url("/assets/fonts/quity.ttf") format("truetype"),
+       url("/assets/fonts/quity.woff") format("woff"),
+       url("/assets/fonts/quity.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/assets/fonts/Quicksand.woff2") format("woff2"),
+       url("/assets/fonts/Quicksand.woff") format("woff"),
+       url("/assets/fonts/Quicksand.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "The Led Display St";
+  src: url("/assets/fonts/The+Led+Display+St.woff2") format("woff2"),
+       url("/assets/fonts/The-Led-Display-St.woff") format("woff"),
+       url("/assets/fonts/The+Led+Display+St.ttf") format("truetype");
+}
+
+.blob {
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(#d5ff2ebc 10%, #74ff2fe9);
+  filter: blur(250px);
+  transition: all 300ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.quity {
+  font-family: "Sintony";
+}
+
+.quicksand {
+  font-family: "Comfortaa";
+}
+
+.led {
+  font-family: "Anek Latin";
+}

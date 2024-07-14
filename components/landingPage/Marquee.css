@@ -1,0 +1,6 @@
+.nbm{
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+
