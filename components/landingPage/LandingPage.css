@@ -81,7 +81,10 @@
     }
 }
 
+
 .animated-button {
+    width: 450px;
+    height: 100px;
     mix-blend-mode: difference;
     position: relative;
     display: flex;
@@ -109,7 +112,14 @@ backdrop-filter: blur(9.9px);
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
+@media (max-width:768px)
+{
+    .animated-button{
+        width: 90vw;
+        height: auto;
+        border-radius: 24px;
+    }
+}
 .animated-button:hover {
     color: #000000;
     transition: 0.6s;
@@ -117,7 +127,8 @@ backdrop-filter: blur(9.9px);
 
 .animated-button svg {
     position: absolute;
-    width: 4vw;
+    width: auto;
+    height: 10vh;
     margin-left: -1.5vw;
     margin-right: -1.65vw;
     fill: var(--color3);

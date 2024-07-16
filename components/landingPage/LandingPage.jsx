@@ -8,7 +8,7 @@ function LandingPage() {
     return (
         <div className='w-screen h-[auto] pt-4'>
             <div className='w-screen flex flex-row items-center min-h-[90vh] h-auto content-between z-0 max-md:flex-col max-md:content-center'>
-            <div className='ff textstructure mt-18 ml-12 px-16 max-md:mt-32 max-md:ml-0 mt-16 pt-12 mr-[0] '>
+            <div className='ff textstructure mt-18 ml-12 px-16 max-md:mt-32 max-md:ml-0 mt-16 pt-12 mr-[0] max-md:px-10 max-md:flex max-md:flex-col max-md:items-center'>
             {['LocAI.Ly', 'Guides You', 'Locally'].map((item, index) => (
                 <div className='masker quity' key={index}>
                     <div className='flex items-center content-center'>
@@ -22,7 +22,7 @@ function LandingPage() {
                 </div>
             ))}
             </div>
-            <div className=' w-[40vw] h-[100vh] ml-40 -z-10 max-md:flex-col max-md:-ml-4 max-md:-mt-96 max-md:w-[100vw] max-lg:ml-0'>
+            <div className=' w-[60vw] h-[100vh] ml-40 -z-10 max-md:flex-col max-md:-ml-4 max-md:-mt-96 max-md:w-[100vw] max-lg:ml-0'>
                 <Spline scene="https://prod.spline.design/4f7qqqkli6Y052ce/scene.splinecode" />
             </div>
             </div>
